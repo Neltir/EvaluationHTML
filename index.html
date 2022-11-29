@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Burger House</title>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/img/logo-bh.png" alt="Logo Burger House">
+                <h1 style="display: none;">Burger House</h1><!--Il me fallait un h1, alors j'ai ajouté le nom de l'entreprise-->
+            </div>
+            <div class="col-8 phone">
+                <img src="assets/img/scooter.png" alt="icone scooter">
+                <p>Express Delivery +1 234 567 890</p>
+            </div>
+        </div>
+    </header>
+    <div class="homeContainer"><!--un container pour mettre le burger en fond css>position:relative-->
+        <div class="burger-home"><!--image du burger en fond dans home-->
+            <img src="assets/img/home-burger.png" alt="Burger du moment et prix">
+        </div>
+        <section id="home">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navigationTop"><!--Nav pour desktop-->
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#">Menu</a></li> <!--Deux liens vers dautres pages je suppose-->
+                            <li><a href="#">Our story</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navMobile"> <!--La nav hamburger pour mobile-->
+                        <nav class="navbar navbar-light">
+                            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#monmenu" aria-controls="monmenu" aria-expanded="false" aria-label="Hamburger">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                        <div class="collapse" id="monmenu">
+                            <div class="shadow-3 p-4">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Our story</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12"> <!--le texte à gauche du burger-->
+                    <p><span class="dashed">It is a good time for the great taste of burgers</span></p>
+                    <h2>Burger <br> <span class="h2v2">Week</span></h2><!--en titre parceque je pense que c'est bien pour le référencement?-->
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container"><!--container global pour tout ce qui est pas la première page:#home-->
+        <section class="tryItToday">
+            <h3 style="display: none;">Try It Today</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="titContainer">
+                        <img src="assets/img/burger1.png" alt="Burger1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="titContainer">
+                        <img src="assets/img/burger2.png" alt="Burger2">
+                    </div>
+                    <div class="titContainer">
+                        <img src="assets/img/burger3.png" alt="Burger3">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary titContainer">Always tasty burger</button><!--un bouton qui sert à rien (╯°□°)╯︵ ┻━┻-->
+                </div>
+            </div>
+        </section>
+        <section class="featured"><!--Reste à compléter-->
+            <div class="text">
+                <h3>CHOOSE & ENJOY</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum vel eligendi commodi, debitis in consequuntur, dolores blanditiis, accusamus adipisci incidunt rem reprehenderit possimus porro et illum quo? Porro, sit?</p>
+            </div>
+        </section>
+        <section class="event"><!--Reste à compléter-->
+            <h3 style="display: none;">Events</h3>
+        </section>
+        <section class="reservation"><!--Reste à compléter-->
+            <h3 style="display: none;">Reservation</h3>
+        </section>
+    </div>
+    <footer id="contact">
+
+    </footer>
+</body>
+</html>
